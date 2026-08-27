@@ -1,0 +1,23 @@
+<h1>Account Settings</h1>
+
+<p>Welcome, {{ user["username"] }}.</p>
+
+<form method="POST" action="/account">
+
+    <label for="display_name">Display Name:</label>
+
+    <br><br>
+
+    <input
+        type="text"
+        id="display_name"
+        name="display_name"
+        value="{{ user['display_name'] or '' }}"
+        placeholder="Enter display name"
+    >
+
+    <br><br>
+
+    <button type="submit">Save Changes</button>
+
+</form>

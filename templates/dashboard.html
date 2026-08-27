@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cyber Lab - Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/account">Account</a>
+        <a href="/logout">Logout</a>
+    </nav>
+
+    <main class="container">
+
+        <h1>Dashboard</h1>
+
+        <p>
+            Welcome, {{ session["username"] }}!
+        </p>
+
+        <h2>Your Account</h2>
+
+        <p>
+            You are successfully logged in.
+        </p>
+
+        <p>
+            <a href="/profile/{{ session['user_id'] }}">
+                View My Profile
+            </a>
+        </p>
+
+        <p>
+            <a href="/account">
+                Account Settings
+            </a>
+        </p>
+
+        <h2>Learning Areas</h2>
+
+        <ul>
+            <li>Web Development</li>
+            <li>Web Security</li>
+            <li>Authentication</li>
+            <li>Database Security</li>
+            <li>OWASP Top 10</li>
+        </ul>
+
+    </main>
+
+</body>
+
+</html>

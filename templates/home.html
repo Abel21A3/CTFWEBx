@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cyber Lab - Home</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+    </nav>
+
+    <main class="container">
+
+        <h1>Welcome to Cyber Lab</h1>
+
+        <p>
+            Learn web development and cybersecurity through practical exercises.
+        </p>
+
+        <h2>What You Will Learn</h2>
+
+        <ul>
+            <li>HTML and CSS</li>
+            <li>Python and Flask</li>
+            <li>SQLite databases</li>
+            <li>Authentication</li>
+            <li>OWASP Top 10</li>
+        </ul>
+
+        <p>
+            <a href="/register">Create an account</a>
+            or
+            <a href="/login">login</a>.
+        </p>
+
+    </main>
+
+</body>
+
+</html>

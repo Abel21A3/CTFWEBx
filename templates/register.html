@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cyber Lab - Register</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+    </nav>
+
+    <main class="container">
+
+        <h1>Create an Account</h1>
+
+        <p>Register for Cyber Lab.</p>
+
+        <form method="POST" action="/register">
+
+            <label for="username">Username:</label>
+            <br><br>
+
+            <input type="text" id="username" name="username" required>
+
+            <br><br>
+
+            <label for="password">Password:</label>
+            <br><br>
+
+            <input type="password" id="password" name="password" required>
+
+            <br><br>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>
